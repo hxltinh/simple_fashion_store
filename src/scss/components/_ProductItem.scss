@@ -1,0 +1,18 @@
+.b-product-item {
+  height: 350px;
+  a {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+  img {
+    width: 100%;
+    max-height: 200px;
+  }
+
+  label {
+    position: relative;
+    display: block;
+  }
+}

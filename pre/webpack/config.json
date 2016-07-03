@@ -1,0 +1,16 @@
+{
+  "development": {
+    "api": {
+      "host": "localhost",
+      "port": "4000"
+    },
+    "invokeUrl": "https://wfgu53osmj.execute-api.eu-west-1.amazonaws.com/bo"
+  },
+  "production": {
+    "api": {
+      "host": "some-website",
+      "port": ""
+    },
+    "invokeUrl": "https://8lqss6aeda.execute-api.eu-west-1.amazonaws.com/qc"
+  }
+}
