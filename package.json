@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "dev": "NODE_ENV=development gulp dev",
-    "prod": "NODE_ENV=production gulp production"
+    "prod": "NODE_ENV=production gulp production",
+    "qc": "NODE_ENV=production gulp qc"
   },
   "author": "Tinh Ha Xuan Long",
   "license": "ISC",
@@ -15,7 +16,6 @@
     "classnames": "^2.2.5",
     "font-awesome": "^4.6.3",
     "google-maps": "^3.2.1",
-    "gulp": "github:gulpjs/gulp#4.0",
     "immutable": "^3.8.1",
     "jquery": "^3.0.0",
     "lodash": "^4.13.1",

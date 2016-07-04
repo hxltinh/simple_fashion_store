@@ -10,7 +10,7 @@ module.exports = () => {
   const commonConf = require('./common');
   const config = _.cloneDeep(commonConf);
 
-  config.devtool = 'source-map';
+  config.devtool = null;
 
   config.output.publicPath = '/';
 
