@@ -2,6 +2,16 @@
     img {
       width: 100%;
     }
+    .b-piv-image-wrapper{
+      position: relative;
+    }
+
+    .b-piv-image-list{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 14%;
+    }
 
     .b-piv-info {
       display: flex;
@@ -10,8 +20,9 @@
     }
     .b-piv-image-list{
       opacity: 0;
+      z-index: 100;
       &.show {
-        opacity: 1
+        opacity: 1;
       }
     }
     .thumb-image{

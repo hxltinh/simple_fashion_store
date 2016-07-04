@@ -7,15 +7,10 @@ import classNames from 'classnames';
 
 export default function TemplateRender() {
   const { product, showImageIndex } = this.props;
-  const imgListStyle = {
-    opacity: 0
-  }
-
-  console.info('this.state.imageListHover:', this.state.imageListHover);
 
   const imagesClass = classNames({
-      'b-piv-image-list col-sx-2 col-sm-2 col-md-2 col.lg-2 ': !this.state.imageListHover,
-      'b-piv-image-list col-sx-2 col-sm-2 col-md-2 col.lg-2 show': this.state.imageListHover
+      'b-piv-image-list': !this.state.imageListHover,
+      'b-piv-image-list show': this.state.imageListHover
     });
 
   return (
@@ -34,7 +29,7 @@ export default function TemplateRender() {
           }
           </div>
 
-          <div className="b-piv-image-full col-sx-10 col-sm-10">
+          <div className="b-piv-image-full col-sx-12 col-sm-12">
             {
               product.images.length > 0 &&
                 <ImageLoader source={ product.images[showImageIndex].url } />
