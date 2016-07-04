@@ -7,11 +7,19 @@ class ImageLoad extends React.Component {
     this.state = {
       loaded : false
     }
+    this.image = null;
   }
 
   componentWillMount() {
-
     this.continueMount = true;
+    return this.updateNewImage(this.props);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    return this.updateNewImage(nextProps);
+  }
+
+  updateNewImage(props) {
     this.image = new Image();
     this.image.onload = () => {
       this.continueMount && this.setState({ loaded: true });
@@ -19,12 +27,10 @@ class ImageLoad extends React.Component {
     this.image.onerror = () => {
       this.continueMount && this.setState({ loaded: false });
     };
-    this.image.src = this.props.source;
+    this.image.src = props.source;
   }
 
   componentWillUnmount() {
-    this.image.onload = () => {};
-    this.image.onerror = () => {};
     this.continueMount = false;
   }
 

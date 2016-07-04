@@ -20,7 +20,7 @@ class MainApp extends Component {
     return (
       <div id="master">
         <div className="container">
-          <header>this is header</header>
+          <header><h4>Ha Xuan Long Tinh: react/redux simple shop demo </h4></header>
           <section>
              {this.props.children}
           </section>

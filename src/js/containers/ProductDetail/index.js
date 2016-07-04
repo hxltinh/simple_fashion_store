@@ -19,8 +19,6 @@ class ProductDetail extends React.Component {
   }
 
   render() {
-    console.info('props:', this.props);
-    // console.debug('props:', this.props);
     return tempateRender.call(this);
   }
 
