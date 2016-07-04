@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageLoader from 'components/ImageLoader';
 import Rating from 'react-rating';
+import { round } from 'lodash';
 
 export default function Render() {
   const { item } = this.props;
@@ -19,7 +20,7 @@ export default function Render() {
         start={0}
         stop={5}
         step={1}
-        initialRate={3}
+        initialRate={round(item.raiting)}
         empty={ <i className="fa fa-star-o" aria-hidden="true"></i> }
         placeholder={ <i className="fa fa-star" aria-hidden="true"></i> }
         full={ <i className="fa fa-star" aria-hidden="true"></i> }

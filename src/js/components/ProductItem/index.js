@@ -4,7 +4,6 @@ import templateRender from './template';
 class ProductItem extends React.Component {
 
   render() {
-
     return templateRender.call(this);
   }
 

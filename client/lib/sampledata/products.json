@@ -134,7 +134,7 @@
 		"title": "Armbågsskydd",
 		"brand": "RESORT",
 		"price": 258.00,
-		"raiting": 0.00,
+		"raiting": 2.80,
 		"images": [
 			{
 			    "url": "http://backontrack.com/media/catalog/product/cache/7/image/945x/9df78eab33525d08d6e5fb8d27136e95/1/2/1200_elbow-brace_3.jpg",
@@ -934,7 +934,7 @@
 		],
 		"size": ["36 (UK8)", "38 (UK10)", "40 (UK12)", "42 (UK14)", "44 (UK16)", "46 (UK18)"],
 		"colors": ["Black", "Yellow"]
-	},	
+	},
 	{
 		"id": 37,
 		"title": "Mössa Ny",
