@@ -3,7 +3,8 @@
 
 ## introduction
 ```
-Demo Reactjs Project
+Demo Reactjs / Redux / Webpack / Babel / Gulp ... Project: simple fashion store
+
 ```
 
 ## environment
