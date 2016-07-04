@@ -1,16 +1,30 @@
 import React from 'react';
 import templateRender from './template';
 
-class ImageShowLarge extends React.Component {
+class ProductItemView extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      imageListHover: false
+    };
+  }
 
   render() {
     return templateRender.call(this);
   }
 
-  onRateClick() {
-
+  mouseOverImageList() {
+    this.setState({imageListHover: true});
   }
+
+  mouseOutImageList() {
+    this.setState({imageListHover: false});
+  }
+
+  onRateClick() {}
 
 }
 
-export default ImageShowLarge;
+export default ProductItemView;

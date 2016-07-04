@@ -3,16 +3,30 @@ import Rating from 'react-rating';
 
 import ImageLoader from 'components/ImageLoader';
 import ProductThumbList from 'components/ProductThumbList';
+import classNames from 'classnames';
 
 export default function TemplateRender() {
   const { product, showImageIndex } = this.props;
+  const imgListStyle = {
+    opacity: 0
+  }
+
+  console.info('this.state.imageListHover:', this.state.imageListHover);
+
+  const imagesClass = classNames({
+      'b-piv-image-list col-sx-2 col-sm-2 col-md-2 col.lg-2 ': !this.state.imageListHover,
+      'b-piv-image-list col-sx-2 col-sm-2 col-md-2 col.lg-2 show': this.state.imageListHover
+    });
 
   return (
     <div className="b-product-item-view container">
       <div className="row">
 
-        <div className="b-piv-image-wrapper">
-          <div className="b-piv-image-list col-sx-2 col-sm-2 col-md-2 col.lg-2">
+        <div className="b-piv-image-wrapper"
+          onMouseEnter={ this.mouseOverImageList.bind(this) }
+          onMouseLeave={ this.mouseOutImageList.bind(this) }
+        >
+          <div className={imagesClass}>
           {
             product.images.length > 0 &&
               <ProductThumbList onThumbClick={ this.props.onThumbClick } images={ product.images } />

@@ -38,7 +38,7 @@ module.exports = () => {
   ]);
 
   const devServerConfig = {
-    noInfo: false,
+    noInfo: true,
     hot: true,
     contentBase: './src',
     publicPath: 'http://0.0.0.0:4000/assets/',
