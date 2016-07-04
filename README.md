@@ -22,3 +22,4 @@ $ npm install
 ## commands
 - $ npm run dev: development mode
 - $ npm run prod: production mode
+- $ npm run qc: quality control mode
