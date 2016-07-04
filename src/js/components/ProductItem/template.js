@@ -12,20 +12,22 @@ export default function Render() {
         className="b-pi-image-wrapper"
         onClick={this.onImageClick.bind(this)}
       >
-        <ImageLoader maxWidth={80} source={item.images[0].url} />
+        <ImageLoader maxWidth={100} source={item.images[0].url} />
       </a>
       <label className="name">{item.title}</label>
       <label>{item.price} kr</label>
-      <Rating
-        start={0}
-        stop={5}
-        step={1}
-        initialRate={round(item.raiting)}
-        empty={ <i className="fa fa-star-o" aria-hidden="true"></i> }
-        placeholder={ <i className="fa fa-star" aria-hidden="true"></i> }
-        full={ <i className="fa fa-star" aria-hidden="true"></i> }
-        onClick={this.onRateClick.bind(this)}
-      />
+      <div className="b-star-rate">
+        <Rating
+          start={0}
+          stop={5}
+          step={1}
+          initialRate={round(item.raiting)}
+          empty={ <i className="fa fa-star-o" aria-hidden="true"></i> }
+          placeholder={ <i className="fa fa-star" aria-hidden="true"></i> }
+          full={ <i className="fa fa-star" aria-hidden="true"></i> }
+          onClick={this.onRateClick.bind(this)}
+        />
+      </div>
       <div>
         <button className="btn btn-default"><i className="fa fa-heart" aria-hidden="true"></i></button>
         <button className="btn btn-default"><i className="fa fa-files-o" aria-hidden="true"></i></button>

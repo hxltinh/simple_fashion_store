@@ -12,8 +12,8 @@ module.exports = () => {
 
   config.debug = true;
 
-  config.entry.vendor = config.entry.vendor.concat([
-    `webpack-dev-server/client?http://localhost:${envConfig.api.port}`,
+  config.entry.bundle = config.entry.bundle.concat([
+    `webpack-dev-server/client?http://0.0.0.0:${envConfig.api.port}`,
     'webpack/hot/dev-server'
   ]);
 
@@ -38,9 +38,10 @@ module.exports = () => {
   ]);
 
   const devServerConfig = {
-    noInfo: true,
+    noInfo: false,
+    hot: true,
     contentBase: './src',
-    publicPath: config.output.publicPath,
+    publicPath: 'http://0.0.0.0:4000/assets/',
     host: envConfig.api.host,
     port: envConfig.api.port,
     historyApiFallback: true,

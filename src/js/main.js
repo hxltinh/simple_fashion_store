@@ -53,4 +53,20 @@ $(document).ready(()=> {
       <Router history={browserHistory} routes={rootRoute} />
     </Provider>
     ), document.getElementById('main-app'));
+
+    // Are we in development mode?
+  // if (module.hot) {
+  //
+  //   // Whenever a new version of App.js is available
+  //   module.hot.accept(function () {
+  //     // Require the new version and render it instead
+  //     console.log('alo');
+  //     const NextApp = require('./main')
+  //     Rdom.render((
+  //       <Provider store={store}>
+  //         <Router history={browserHistory} routes={rootRoute} />
+  //       </Provider>
+  //       ), document.getElementById('main-app'));
+  //   })
+  // }
 });

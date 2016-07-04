@@ -1,5 +1,7 @@
 .b-product-item {
-  height: 350px;
+  display: table;
+  padding: 1%;
+  line-height: 120%;
   a {
     position: relative;
     width: 100%;
@@ -7,12 +9,36 @@
   }
 
   img {
-    width: 100%;
-    max-height: 200px;
+    max-width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
   }
 
   label {
     position: relative;
     display: block;
+    font-size: 15px;
+    margin: 5px 0;
   }
+
+  .btn-default {
+    margin: 2px;
+    color: #b3b3b3;
+  }
+
+  .b-star-rate {
+    > span > span {
+      margin: 0 2px;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+    img {
+        max-height: 200px;
+
+    }
+  }
+
 }

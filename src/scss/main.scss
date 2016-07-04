@@ -1,2 +1,10 @@
+@import './utils/variable';
 @import './components/ProductItem';
 @import './components/ProductItemView';
+@import './components/ImageSizeControl';
+
+@import './components/Home';
+
+.purple-color {
+    color: $purple;
+}
