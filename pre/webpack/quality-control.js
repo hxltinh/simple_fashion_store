@@ -13,6 +13,7 @@ module.exports = () => {
   config.devtool = 'source-map';
 
   config.output.publicPath = '/';
+  config.output.path = path.resolve('./qc/app');
 
   config.module.loaders = config.module.loaders.concat([
     { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!sass') },
