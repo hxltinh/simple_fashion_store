@@ -45,7 +45,7 @@ gulp.task('copy-client-images', done => {
 
 // copy template client foler
 gulp.task('copy-client-template', done => {
-  gulp.src(['template/index.html']).pipe(gulp.dest('client/index.html'))
+  gulp.src(['template/*']).pipe(gulp.dest('client'))
     .on('finish', () => done());
 });
 
@@ -81,7 +81,7 @@ gulp.task('copy-qc-images', done => {
 
 // copy template qc foler
 gulp.task('copy-qc-template', done => {
-  gulp.src(['template/index.html']).pipe(gulp.dest('qc/index.html'))
+  gulp.src(['template/*']).pipe(gulp.dest('qc'))
     .on('finish', () => done());
 });
 
