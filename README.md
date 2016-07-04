@@ -14,6 +14,7 @@ Demo Reactjs Project
 ```
 $ npm install --global webpack
 $ npm install --global webpack-dev-server
+$ npm install --global gulp-cli
 $ npm install
 ```
 
