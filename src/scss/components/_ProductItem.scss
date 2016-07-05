@@ -2,6 +2,7 @@
   display: table;
   padding: 1%;
   line-height: 120%;
+  text-align: center;
   a {
     position: relative;
     width: 100%;
@@ -26,12 +27,6 @@
   .btn-default {
     margin: 2px;
     color: #b3b3b3;
-  }
-
-  .b-star-rate {
-    > span > span {
-      margin: 0 2px;
-    }
   }
 
   @media screen and (min-width: 768px){

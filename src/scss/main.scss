@@ -8,3 +8,10 @@
 .purple-color {
     color: $purple;
 }
+
+.b-star-rate {
+  padding: 5px;
+  > span > span {
+    margin: 0 2px;
+  }
+}

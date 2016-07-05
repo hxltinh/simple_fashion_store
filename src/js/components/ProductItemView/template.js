@@ -29,7 +29,7 @@ export default function TemplateRender() {
           }
           </div>
 
-          <div className="b-piv-image-full col-sx-12 col-sm-12">
+          <div className="b-piv-image-full col-sx-12 col-sm-12 clearfix">
             {
               product.images.length > 0 &&
                 <ImageLoader source={ product.images[showImageIndex].url } />
@@ -38,7 +38,7 @@ export default function TemplateRender() {
 
           </div>
 
-          <div className="b-piv-image-footer text-center text-uppercase">
+          <div className="b-piv-image-footer text-center text-uppercase clearfix">
             <h3>AVAILABLE SIZE</h3>
             <div>{ product && product.size && product.size.join(', ') }</div>
           </div>
@@ -47,7 +47,7 @@ export default function TemplateRender() {
         <div className="b-piv-info row text-center">
           <div className="b-piv-info clearfix">
             <div className="center-block">
-              <div>
+              <div className="b-star-rate">
                 <Rating
                   start={0}
                   stop={5}
@@ -59,9 +59,9 @@ export default function TemplateRender() {
                   onClick={this.onRateClick.bind(this)}
                 />
               </div>
-              <div> { product.title } </div>
-              <div> { product.price } </div>
-              <div> { product.brand } </div>
+              <h4> { product.title } </h4>
+              <div> SEK { product.price } kr </div>
+              <h3 className="i-piv-brand"> { product.brand } </h3>
             </div>
           </div>
         </div>

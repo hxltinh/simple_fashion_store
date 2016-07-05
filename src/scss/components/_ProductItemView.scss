@@ -2,8 +2,35 @@
     img {
       width: 100%;
     }
+
+    h4 {
+      margin-top: 0;
+    }
+    h3 {
+      color: $white_grey;
+    }
+
+    .b-star-rate {
+      margin-top: 10px;
+    }
+
+    .i-piv-brand {
+      margin-top: 5px;
+    }
+
     .b-piv-image-wrapper{
       position: relative;
+    }
+
+    .b-piv-image-full, .b-piv-image-footer{
+      position: relative;
+    }
+
+    .b-piv-image-footer {
+      clear: both;
+      background-color: #838383;
+      color: white;
+      padding-bottom: 2em;
     }
 
     .b-piv-image-list{

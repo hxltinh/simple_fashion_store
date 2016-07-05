@@ -20,6 +20,6 @@ $ npm install
 ```
 
 ## commands
-- $ npm run dev: development mode, access "http://localhost:4000" for development with Webpack Hot Module Replacement
-- $ npm run prod: production mode
-- $ npm run qc: quality control mode
+- $ npm run dev: development mode, access [http://localhost:4000](http://localhost:4000) for development with Webpack Hot Module Replacement
+- $ npm run prod: build production mode
+- $ npm run qc: build quality control mode

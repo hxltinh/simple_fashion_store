@@ -15,7 +15,7 @@ export default function Render() {
         <ImageLoader maxWidth={100} source={item.images[0].url} />
       </a>
       <label className="name">{item.title}</label>
-      <label>{item.price} kr</label>
+      <label>SEK {item.price} kr</label>
       <div className="b-star-rate">
         <Rating
           start={0}
