@@ -19,9 +19,9 @@ module.exports = () => {
 
   config.output.publicPath = '/assets/';
 
-  config.module.preLoaders = [
-    { test: /\.js?$/, loader: 'eslint', exclude: /node_modules/ }
-  ];
+  // config.module.preLoaders = [
+  //   { test: /\.js?$/, loader: 'eslint', exclude: /node_modules/ }
+  // ];
 
   config.module.loaders = config.module.loaders.concat([
     { test: /\.scss$/, loaders: [ 'style', 'css?sourceMap', 'sass?sourceMap' ]},
