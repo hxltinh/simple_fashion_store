@@ -15,6 +15,7 @@ class ProductDetail extends React.Component {
   }
 
   componentWillMount() {
+    console.log('props:', this.props);
     this.props.getProductItem(this.props.params.id);
   }
 
