@@ -17,6 +17,7 @@ class Home extends React.Component {
       orderName: 'title',
       orderType: 'asc'
     }
+
   }
 
   componentWillMount() {
